@@ -14,11 +14,10 @@ a{
 
 .header{
     max-width: 1170px;
-    height: 40px;
+    /* height: 40px; */
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
 }
 
 .rightList{
@@ -37,10 +36,8 @@ a{
 }
 
 .logo{
-    width: 50%;
 
     a{
-        font-weight: 500px;
         font-size: 20px;
         line-height: 29.38px;
         color: #000000;
@@ -50,13 +47,17 @@ a{
 .main1{
     display: flex;
     width: 1170px;
-    height: 70vh;
+    
+    height: 100vh;
     margin: 0 auto;
-    gap: 250px;
+    /* gap: 250px; */
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 .myImage{
+   
     width: 243px;
     height: 243px;
     margin: 0 auto;
@@ -66,8 +67,6 @@ a{
 
 .main1FirstSide h1{
     width: 506px;
-    height: 105px;
-    font-weight: 700px;
     font-size: 44px;
     line-height: 60px;
     color: #21243D;
@@ -77,8 +76,6 @@ a{
 
 .main1FirstSide p{
     width: 497px;
-    height: 66px;
-    font-weight: 400px;
     font-size: 16px;
     line-height: 24px;
     color: #21243D;
@@ -91,7 +88,6 @@ background-color: #FF6464;
 color: #ffffff;
 width: 208px;
 height: 47px;
-font-weight: 500px;
 font-size: 20px;
 border-radius: 2px;
 line-height: 29px;
@@ -106,16 +102,14 @@ border: none;
 
 .main2{
     background-color: #EDF7FA;
-    height: 396px;
-    margin-bottom: 15px;
+    padding: 25px;
 }
 
 .postHeader{
-    width: 1170px;
+    max-width: 1170px;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    height: 60px;
     align-items: center;
 
     .recentP{
@@ -134,13 +128,11 @@ border: none;
 }
 
 .posts{
-    width: 1170px;
-    height: 295px;
+    max-width: 1170px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    gap: 20px; 
     .post{
-        width: 418px;
         border-radius: 4px;
         background-color: #ffffff;
         box-shadow: 0px 4px 10px 0px #BBE1FA40;
@@ -148,15 +140,12 @@ border: none;
 
 
         h2{
-            width: 374px;
-            height: 85px;
-            font-weight: 700px;
             font-size: 26px;
             line-height: 38px;
             margin-bottom: 10px;
         }
         .postDate{
-            font-weight: 400px;
+            font-weight: 400;
             font-size: 18px;
             line-height: 26px;
             color: #21243D;
@@ -164,8 +153,7 @@ border: none;
 
         }
         .postInfo{
-            width: 368px;
-            font-weight: 400px;
+            font-weight: 400;
             font-size: 16px;
             line-height: 23px;
             color: #21243D;
@@ -174,18 +162,16 @@ border: none;
 }
 
 .main3{
-    height: 100vh;
     margin-bottom: 83px;
 
     .featuredWork{
-        width: 1170px;
+        max-width: 1170px;
         margin: 0 auto;
         font-weight: 400;
         font-size: 22px;
         line-height: 60px;
         color: #21243D;
         margin-bottom: 18px;
-        /* height: 60px; */
     }
 
     
@@ -193,29 +179,28 @@ border: none;
 
 
 .cards{
-    width: 1170px;
-    height: 210px;
+    max-width: 1170px;
     margin: 0 auto;
     display: flex;
     gap: 18px;
     border-bottom: 1px solid #E0E0E0;
-    margin-bottom: 31px;
+    /* margin-bottom: 31px; */
+    padding: 30px;
 
     img{
-        width: 246px;
-        height: 180px;
+        width: 100%;
+        max-width: 246px;
         border-radius: 6px;
         border: 1px solid black;
         margin-bottom: 15px
     }
 
-    .card{
-        height: 180px;
+    /* .card{
         gap: 16px;
+ */
 
-
-        h1{
-            height: 44px;
+       .card h1{
+            /* height: 44px; */
             /* width: 305px; */
             font-weight: 700px;
             font-size: 30px;
@@ -247,15 +232,15 @@ border: none;
             }
         }
     }
-}
 
 .card p{
-    width: 594px;
-    height: 93px;
+    /* width: 594px; */
+    /* height: 93px; */
     font-weight: 400px;
     font-size: 16px;
     line-height: 23px;
     color: #21243D;
+    margin-bottom: 20px
 }
 
 
@@ -263,7 +248,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 182px;
 }
 
 .icons{
