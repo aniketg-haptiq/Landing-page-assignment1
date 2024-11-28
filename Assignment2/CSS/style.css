@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: "Heebo", sans-serif;
@@ -11,11 +12,13 @@ ul{
 a{
     text-decoration: none;
 }
-
-.header{
+.container{
     max-width: 1170px;
-    /* height: 40px; */
-    margin: 60px auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header{
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -24,49 +27,58 @@ a{
     display: flex;
     justify-content: space-between;
     width: 250px;
+}
+.rightList a{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29.38px;
+    color: #000000;
 
-    a{
-        font-weight: 500px;
+    &:hover{
+        color: #c52d2d;
+    }
+    
+}
+
+.postImages{
+    min-width: 246px;
+}
+.postImages img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px
+}
+
+
+.myImage img{
+    width: 243px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -6px 4px 2px #EDF7FA;
+    margin: 0 auto;
+}
+
+.logo a{
         font-size: 20px;
         line-height: 29.38px;
         color: #000000;
-        
-    }
-
 }
 
-.logo{
-
-    a{
-        font-size: 20px;
-        line-height: 29.38px;
-        color: #000000;
-    }
-}
 
 .main1{
     display: flex;
-    width: 1170px;
-    
-    height: 100vh;
-    margin: 0 auto;
-    /* gap: 250px; */
+    min-height: 100vh;
+    gap: 30px;
     justify-content: space-between;
     align-items: center;
 
 }
 
-.myImage{
-   
-    width: 243px;
-    height: 243px;
-    margin: 0 auto;
-    border-radius: 50%;
-    box-shadow: -6px 4px 2px #EDF7FA;
-}
+
+
 
 .main1FirstSide h1{
-    width: 506px;
     font-size: 44px;
     line-height: 60px;
     color: #21243D;
@@ -75,7 +87,7 @@ a{
 }
 
 .main1FirstSide p{
-    width: 497px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #21243D;
@@ -86,16 +98,16 @@ a{
 .main1FirstSide button{
 background-color: #FF6464;
 color: #ffffff;
-width: 208px;
-height: 47px;
 font-size: 20px;
 border-radius: 2px;
 line-height: 29px;
 border: none;
+padding: 10px;
 
 &:hover{
-    background-color: #c52d2d;
+    background-color: #b34040;
     cursor: pointer;
+    font-weight: 300;
 }
 
 }
@@ -106,136 +118,113 @@ border: none;
 }
 
 .postHeader{
-    max-width: 1170px;
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+}
+.postHeader .recentP{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+    color: #21243D;
+    height: 60px;
+}
+.postHeader .viewAll{
+    height: 60px;
+    text-decoration: underline;
 
-    .recentP{
-        font-weight: 400px;
-        font-size: 22px;
-        line-height: 60px;
-        color: #21243D;
-        height: 60px;
-    }
-    .viewAll{
-        height: 60px;
-        text-decoration: underline;
-
+    &:hover{
+        color: black;
     }
 
 }
 
 .posts{
-    max-width: 1170px;
-    margin: 0 auto;
     display: flex;
     gap: 20px; 
-    .post{
-        border-radius: 4px;
-        background-color: #ffffff;
-        box-shadow: 0px 4px 10px 0px #BBE1FA40;
-        padding: 24px;
+    
+}
+.posts .post{
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px 0px #BBE1FA40;
+    padding: 24px;
 
-
-        h2{
-            font-size: 26px;
-            line-height: 38px;
-            margin-bottom: 10px;
-        }
-        .postDate{
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 26px;
-            color: #21243D;
-            margin-bottom: 20px;
-
-        }
-        .postInfo{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 23px;
-            color: #21243D;
-        }
+    &:hover{
+        box-shadow: 3px 3px 3px 3   px #4b6d8540;
+       
     }
+
+}
+.posts .post h2{
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+.posts .post .postDate{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #21243D;
+    margin-bottom: 20px;
+}
+.posts .post .postInfo{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #21243D;
 }
 
 .main3{
     margin-bottom: 83px;
-
-    .featuredWork{
-        max-width: 1170px;
-        margin: 0 auto;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 60px;
-        color: #21243D;
-        margin-bottom: 18px;
-    }
-
-    
+}
+.main3 .featuredWork{    
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+    color: #21243D;
+    margin-bottom: 18px;
 }
 
 
 .cards{
-    max-width: 1170px;
-    margin: 0 auto;
     display: flex;
-    gap: 18px;
+    gap: 34px;
     border-bottom: 1px solid #E0E0E0;
-    /* margin-bottom: 31px; */
     padding: 30px;
 
-    img{
-        width: 100%;
-        max-width: 246px;
-        border-radius: 6px;
-        border: 1px solid black;
-        margin-bottom: 15px
     }
-
-    /* .card{
-        gap: 16px;
- */
-
-       .card h1{
-            /* height: 44px; */
-            /* width: 305px; */
-            font-weight: 700px;
-            font-size: 30px;
-            line-height: 44px;
-            margin-bottom: 16px;
-        }
-
-        .btnSapn{
-            display: flex;
-            gap: 36px;
-            margin-bottom: 17px;
-
-            button{
-                height: 25px;
-                width: 62px;
-                border-radius: 16px;
-                background-color: #142850;
-                color: #FFFFFF;
-                font-weight: 900; 
-                font-size: 18px;
-            }
-            span{
-                width: 374px;
-                height: 34px;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 29px;
-                color: #8695A4;
-            }
-        }
-    }
+.cards .card h1{
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 44px;
+    margin-bottom: 16px;
+}
+.cards .btnSapn{
+    display: flex;
+    gap: 36px;
+    margin-bottom: 17px;
+}
+.cards .btnSapn span{
+    width: 374px;
+    height: 34px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #8695A4;
+}
+.main3 .year{
+    width: 62px;
+    height: 25px;
+    background-color: #142850;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+}
 
 .card p{
-    /* width: 594px; */
-    /* height: 93px; */
     font-weight: 400px;
     font-size: 16px;
     line-height: 23px;
@@ -243,8 +232,11 @@ border: none;
     margin-bottom: 20px
 }
 
-
 footer{
+    padding-bottom: 54px;
+}
+
+.iconAndCopy{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,94 +253,91 @@ footer{
 
 
 @media (max-width:768px) {
+    .container{
+        width: 100%;
+    }
     .header{
-        width: 767px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 33px;
-
-        .logo{
-            max-width: 300px;
-        }
+        display: none;
     }
     .main1{
-        width: 767px;
-        height: 80vh;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-
-        img{
-            order: -1;
-            /* width: 174px;
-            height: 180px; */
-            
-        }
-        .main1FirstSide{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            h1{
-                width: 312px;
-                height: 120px;
-                font-weight: 700px;
-                font-size: 32px;
-                text-align: center;
-                line-height: 40px;
-                margin-bottom: 34px
-            }
-            p{
-                width: 328px;
-                height: 96px;
-                font-weight: 400px;
-                font-size: 16px;
-                line-height: 23px;
-                text-align: center;
-                margin-bottom: 36px
-            }
-            button{
-                width: 208px;
-                height: 47px;
-                font-weight: 500px;
-                font-size: 20px;
-                line-height: 29px;
-                margin-bottom: 50px;
-            }
-        }
+        justify-content: center;
+        gap: 34px;
+        height: calc(100vh - 100px);
     }
+    .myImage{
+        order: -1;
+    }
+    .myImage img{
+        width: 170px;
+    }
+    .main1FirstSide h1{
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 21px;
+    }
+    .main1FirstSide p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 27px;
+    }
+    .main1FirstSide button{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        
+    }
+    .main1FirstSide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
-    .main2{
-        width: 767px;
-        height: 100vh;
-        .postHeader{
-            width: 767px;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 50px;
-            .viewAll{
-                display: none;
-            }
-            
-        }
-       .posts{
-        width: 767px;
+    }
+    .postHeader .viewAll{
+        display: none;
+    }
+    .posts{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
-        
-       }
     }
-
-    .main3{
-        width: 768px;
-
-        .featuredWork{
-            width: 768px;
-            text-align: center;
-        }
+    .postWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+   
 
+    .postImages{
+        width: 100%;
+    }
+    .featuredWork{
+        text-align: center;
+        font-size: 18px;
+    }
+    .postImages img{
+        width: 100%;
+        height: 100%;
+    }
+    .card .btnSapn .span{
+        font-weight: 400;
+        font-size: 16px;
+
+    }
+    .iconAndCopy{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
     
 }
