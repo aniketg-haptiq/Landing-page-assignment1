@@ -1,0 +1,464 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Heebo", serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+p{
+    line-height: 22px;
+}
+
+.container{
+    max-width: 1225px;
+    margin: 0 auto;    
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.navbar .logo h2{
+    color: white;
+}
+.navbarRight{
+    display: flex;
+    gap: 8px;
+}
+
+.navbarRight li{
+    text-align: center;
+    padding: 8px 24px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+
+    &:hover{
+        border: 1px solid #FFFFFF;
+        
+    }
+}
+
+.navbarRight li a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color:rgba(255, 255, 255, 75%);
+
+    &:hover{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #FFFFFF;
+    }
+}
+
+.hero{
+    background: url("/Assignment3/images/Rectangle\ 1.png");
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    margin-top: -98px;
+    background-position: center;
+}
+
+.heroMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px);
+}
+
+.heroMain h1{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.heroMain p{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 75%);
+    margin-bottom: 64px;
+}
+
+.heroMain button{
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    border-radius: 100px;
+    background-color: #6C00FF;
+    border: none;
+    color: #FFFFFF;
+    gap: 16px;
+    margin-bottom: 94px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #4b2680;
+
+    }
+
+}
+
+.serviceImg{
+    max-width: 96px;
+    max-height: 96px;
+    background-color: #6C00FF;
+    padding: 28px;
+    border-radius: 100px;
+    margin-bottom: 32px;
+
+    &:hover{
+    background-color: #4b2680;
+    cursor: pointer;
+
+    }
+}
+
+.serviceWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 0;
+}
+.serviceWrapper h4{
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #222831;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.serviceWrapper .serviceText, .features .featureText, .formWrapper .formHeading{
+    font-weight: 600;
+    font-size: 14px;
+    color: #6C00FF;
+    line-height: 16px;
+    letter-spacing: 0.4em;
+    text-align: center;
+
+
+}
+.serviceWrapper h2{
+    margin-bottom: 64px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #000000;
+
+}
+.serviceCards{
+    display: flex;
+    gap: 103px;
+}
+.serviceCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceCard p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    opacity: 75%;
+}
+
+.features .feature{ 
+    display: flex;
+    gap: 127px;
+    align-items: center;
+}
+
+.features .featureInfo h2{
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    color: #222831;
+    margin-bottom: 32px;
+
+}
+
+.features .featureInfo .tickAndList{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+.features .featureInfo .tickAndList img{
+    max-width: 15px;
+    max-height: 15px;
+}
+
+.features .featureImg img{
+    box-shadow: 32px 32px #6C00FF;
+}
+
+.features .featureInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature .featureInfo .featureText{
+    margin-bottom: 16px;
+}
+
+.feature .featureInfo .list{
+    margin-bottom: 16px;
+  
+}
+
+.feature .featureInfo .tickAndList{
+    margin-top: 16px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 192px;
+    padding: 0 68px;
+    padding-bottom: 108px;
+}
+
+
+.features .reverseShadow img{
+    box-shadow: -32px -32px #6C00FF;
+}
+
+.formSection{
+    background-color: rgba(238, 238, 238, 1);
+}
+
+.formWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.formWrapper .mainForm{
+    display: flex;
+    gap: 130px;
+}
+
+.formWrapper .mainForm .form{
+    display: flex;
+    flex-direction: column;
+}
+.formWrapper .mainForm .form input, 
+.formWrapper .mainForm .form textarea, 
+.formWrapper .mainForm .form button{
+    width: 373px;
+    height: 64px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 21px 40px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+
+
+
+}
+.formWrapper .mainForm .form textarea{
+    height: 128px;
+    border-radius: 32px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
+.formWrapper .mainForm .form .sendBtn{
+    background-color: #6C00FF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: white;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #4b2680;
+    }
+}
+
+.formWrapper .contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.formWrapper .contacts .contact{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.formWrapper .contacts .contact h4{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #393E46;
+}
+
+
+.formWrapper .contacts .contact .iconImg{
+    max-width: 69px;
+    max-height: 69px;
+    padding: 22px;
+    background-color: rgba(108, 0, 255, 0.1);
+    border-radius: 100px;
+}
+
+.formWrapper{
+    padding: 108px 170px;
+}
+
+.formWrapper .formHeading{
+    margin-bottom: 16px;
+}
+.formWrapper h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #222831;
+    margin-bottom: 32px;
+}
+
+.footerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 108px 0;
+    gap: 24px;
+
+}
+
+.footerWrapper .footerList{
+    display: flex;
+    gap: 8px;
+
+
+}
+
+.footerWrapper .footerList li{
+    padding: 8px 24px;
+    border-radius: 100px;
+    opacity: 0.75px;
+
+
+
+
+}
+.footerWrapper .footerList li a,
+.footerWrapper p
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: rgba(57, 62, 70, 0.75);
+}
+
+
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+
+    }
+    .navbar{
+        display: none;
+    }
+    .hero{
+        width: 100%;
+    }
+
+    .features .feature{
+        display: flex;
+        flex-direction: column;
+        gap: 97px;
+     
+    }
+    .features .reverseFeature{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .feature .feature .featureInfo{
+        order: -1;
+    }
+    .features .featureInfo{
+        
+        align-items: center;
+    }
+    .formWrapper .mainForm{
+        flex-direction: column;
+        gap: 110px;
+    }
+    .serviceCards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .serviceWrapper{
+        padding: 98px 0;
+    }
+    .serviceWrapper h2{
+        margin-bottom: 54px;
+    }
+    .serviceCard p{
+        padding: 0 120px;
+    }
+    .serviceImg {
+        margin-bottom: 22px;
+    }
+    .feature .featureInfo .list{
+        padding: 0 52px;
+        text-align: center;
+    }
+    .features .reverseShadow img{
+        box-shadow: 32px 32px #6C00FF;
+    }
+    .features .featureInfo h2{
+        text-align: center;
+    }
+    .footerWrapper{
+        padding: 88px 0;
+    }
+    .footerWrapper .footerList {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+}
