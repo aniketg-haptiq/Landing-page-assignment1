@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <ul class="navbarRight">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li>
+              <select name="" id="" class="lang">
+                <option value="en">En</option>
+                <option value="en">En2</option>
+                <option value="en">En3</option>
+              </select>
+            </li>
+            <li class="navBtn">
+              <button>Login</button>
+              <button class="signupBtn">Signup</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="hero">
+        <div class="heroLeft">
+          <div class="leftWrapper">
+            <div class="logoTitle">
+              <img src="./images/heroLogo.png" alt="" />
+              <p class="title">Hair Salon, Masseuse, Beauty Salon</p>
+            </div>
+            <h1>Find a service close to you</h1>
+            <p class="discription">
+              There are many variation of passages are Ipsum available, majority
+              have suffered alteration in some form.
+            </p>
+            <form action="" class="form">
+              <div class="labels">
+                <div class="labelInput">
+                  <label for="serviceName">Service Name</label>
+                  <div class="inputLogo">
+                    <input type="text" placeholder="Book your services..." />
+                    <img src="./images/smallSearch.png" alt="" />
+                  </div>
+                </div>
+                <div class="labelInput">
+                  <label for="address">Address</label>
+                  <div class="inputLogo">
+                    <input type="text" placeholder="Where" />
+                    <img src="./images/smallLocation.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <button class="searchBtn">
+                <span>Search</span>
+                <img src="./images/search.png" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="heroImg">
+          <!-- <img src="./images/Rectangle 3.png" alt=""> -->
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="sliderWrapper">
+          <button class="prev slideBtn">
+            <img src="./images/prevBtnImg.png" alt="">
+          </button>
+          <div class="sliderMenu">
+            <div class="card">
+              <img src="./images/fame1.png" alt="" />
+              <span>Makeup-artist</span>
+            </div>
+            <div class="card">
+              <img src="./images/frame2.png" alt="" />
+              <span>Wellnesscenter</span>
+            </div>
+            <div class="card">
+              <img src="./images/frame3.png" alt="" />
+              <span>Barbersalon</span>
+            </div>
+            <div class="card">
+              <img src="./images/frame4.png" alt="" />
+              <span>Frisørsalon</span>
+            </div>
+            <div class="card">
+              <img src="./images/frame5.png" alt="" />
+              <span>Massageklinik</span>
+            </div>
+            <div class="card">
+              <img src="./images/frame6.png" alt="" />
+              <span>Fodterapeut</span>
+            </div>
+            <div class="card">
+              <img src="./images/fame1.png" alt="" />
+              <span>Makeup-artist</span>
+            </div>
+          </div>
+          <button class="next slideBtn">
+            <img src="./images/nextBtnImg.png" alt="">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="serviceWrapper">
+          <h5>Our Services</h5>
+          <h2>Recommended</h2>
+          <p class="serviceWrapInfo">Lorem ipsum dolor sit amet consectetur. Eu quis enim tempor et proin neque.</p>
+          <div class="services">
+            <div class="serviceCard">
+              <img id="cardImg" src="./images/card1.png" alt="">
+              <div class="cardInfo">
+                <div class="ratings">
+                <div><img src="./images/rateStar.png" alt="">
+                <span>4.5</span></div>
+                <span id="review">104 reviews</span>
+              </div>
+              <h3 class="infoHeading">Salon Name</h3>
+              <div class="serviceLocation">
+                <img src="./images/placeholder 1.png" alt="">
+                <p id="location">Brookpark Ext, 27085, North Olmsted, 44070</p>
+              </div>
+              <button class="booknowBtn">Book Now</button>
+              </div>
+            </div>
+            <div class="serviceCard">
+              <img id="cardImg" src="./images/card1.png" alt="">
+              <div class="cardInfo">
+                <div class="ratings">
+                <div><img src="./images/rateStar.png" alt="">
+                <span>4.5</span></div>
+                <span id="review">104 reviews</span>
+              </div>
+              <h3 class="infoHeading">Salon Name</h3>
+              <div class="serviceLocation">
+                <img src="./images/placeholder 1.png" alt="">
+                <p id="location">Brookpark Ext, 27085, North Olmsted, 44070</p>
+              </div>
+              <button class="booknowBtn">Book Now</button>
+              </div>
+            </div>
+            <div class="serviceCard">
+              <img id="cardImg" src="./images/card1.png" alt="">
+              <div class="cardInfo">
+                <div class="ratings">
+                <div><img src="./images/rateStar.png" alt="">
+                <span>4.5</span></div>
+                <span id="review">104 reviews</span>
+              </div>
+              <h3 class="infoHeading">Salon Name</h3>
+              <div class="serviceLocation">
+                <img src="./images/placeholder 1.png" alt="">
+                <p id="location">Brookpark Ext, 27085, North Olmsted, 44070</p>
+              </div>
+              <button class="booknowBtn">Book Now</button>
+              </div>
+            </div>
+            <div class="serviceCard">
+              <img id="cardImg" src="./images/card1.png" alt="">
+              <div class="cardInfo">
+                <div class="ratings">
+                <div><img src="./images/rateStar.png" alt="">
+                <span>4.5</span></div>
+                <span id="review">104 reviews</span>
+              </div>
+              <h3 class="infoHeading">Salon Name</h3>
+              <div class="serviceLocation">
+                <img src="./images/placeholder 1.png" alt="">
+                <p id="location">Brookpark Ext, 27085, North Olmsted, 44070</p>
+              </div>
+              <button class="booknowBtn">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="commentWrapper">
+          <h5>Testimonials</h5>
+          <h2>What our Customers says...</h2>
+          <div class="comments">
+            <div class="comment">
+              <div class="commentInfo">
+                <img src="./images/Contents.png" alt="">
+                <div class="info">
+                  <div class="quote1"><img src="./images/Heading.png" alt=""></div>
+                  <p class="name">Leslie Alexander</p>
+                  <p class="loc">Moncton, Canada</p>
+                  <h3 class="title">Neque porro quisquam est qui dolum</h3>
+                  <p class="titleInfo">“ It is a long established fact that a reader will be tracked distracted by the readable content of a page is when looking at its layout. The point of using Lorem of distribution it look like readable English “</p>
+                  <div class="quote2"><img src="./images/Heading2.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="commentInfo">
+                <img src="./images/Contents.png" alt="">
+                <div class="info">
+                  <div class="quote1"><img src="./images/Heading.png" alt=""></div>
+                  <p class="name">Leslie Alexander</p>
+                  <p class="loc">Moncton, Canada</p>
+                  <h3 class="title">Neque porro quisquam est qui dolum</h3>
+                  <p class="titleInfo">“ It is a long established fact that a reader will be tracked distracted by the readable content of a page is when looking at its layout. The point of using Lorem of distribution it look like readable English “</p>
+                  <div class="quote2"><img src="./images/Heading2.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cmtBtn">
+            <button class="leftC slick-arrow"><img src="./images/chevron--right 1 (1).png" alt=""></button>
+          <button class="rightC"><img src="./images/chevron--right 1.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footerBg">
+        <div class="container">
+          <div class="footerWrapper">
+            <div class="logos">
+              <img src="./images/footerlogo.png" alt="">
+              <div class="icons">
+                <img src="./images/1.png" alt="">
+                <img src="./images/2.png" alt="">
+                <img src="./images/3.png" alt="">
+                <img src="./images/4.png" alt="">
+              </div>
+            </div>
+            <div class="footerInfos">
+              <div class="footerInfo explore">
+                <h2>Explore</h2>
+                <ul>
+                  <li>Home</li>
+                  <li>About us</li>
+                  <li>Services</li>
+                  <li>Blog</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+              <div class="footerInfo utility">
+                <h2>Utility Page</h2>
+                <ul>
+                  <li>Privacy Policy</li>
+                  <li>Terms of use</li>
+                </ul>
+              </div>
+              <div class="footerInfo keepTouch">
+                <h2>Keep In Touch</h2>
+                <ul>
+                  <li class="address">
+                    <p>Address :</p>
+                    <p>Mariendalsvej 50D 2 2000 Frederiksberg.</p>
+                  </li>
+                  <li class="mail">
+                    <p>Mail :</p>
+                    <p>support@servicemarket.com</p>
+                  </li>
+                  <li class="phone">
+                    <p>Phone :</p>
+                    <p>(+22) 123 - 4567 - 900</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="copyrightBg">
+        <div class="container">
+          <p class="copyright">© 2023&nbsp;&nbsp; ServiceMarket.dk&nbsp;&nbsp; |&nbsp;&nbsp; All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(".sliderMenu").slick({
+        infinite: true,
+        dots: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        prevArrow: $(".prev"),
+        nextArrow: $(".next")
+
+      });
+
+      $(".prev").on("click", function () {
+        $slider.slick("slickPrev"); // Go to the previous slide
+      });
+      $(".next").on("click", function () {
+        $slider.slick("slickNext"); // Go to the next slide
+      });
+    </script>
+    <script>
+      $(".comments").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $(".leftC"),
+        nextArrow: $(".rightC")
+
+      });
+
+      $(".leftC").on("click", function () {});
+      $(".rightC").on("click", function () {});
+    </script>
+  </body>
+</html>
