@@ -55,6 +55,9 @@
     <section>
       <div class="hero">
         <div class="heroLeft">
+          
+        </div>
+        <div class="container">
           <div class="leftWrapper">
             <div class="logoTitle">
               <img src="./images/heroLogo.png" alt="" />
@@ -89,9 +92,9 @@
             </form>
           </div>
         </div>
-        <div class="heroImg">
+        <!-- <div class="heroImg"> -->
           <!-- <img src="./images/Rectangle 3.png" alt=""> -->
-        </div>
+        <!-- </div> -->
       </div>
     </section>
     <section>
@@ -144,7 +147,7 @@
           <p class="serviceWrapInfo">Lorem ipsum dolor sit amet consectetur. Eu quis enim tempor et proin neque.</p>
           <div class="services">
             <div class="serviceCard">
-              <img id="cardImg" src="./images/card1.png" alt="">
+              <div class="serviceImg" ><img src="./images/card1.png" alt=""></div>
               <div class="cardInfo">
                 <div class="ratings">
                 <div><img src="./images/rateStar.png" alt="">
@@ -153,14 +156,14 @@
               </div>
               <h3 class="infoHeading">Salon Name</h3>
               <div class="serviceLocation">
-                <img src="./images/placeholder 1.png" alt="">
+                <div><img src="./images/placeholder 1.png" alt=""></div>
                 <p id="location">Brookpark Ext, 27085, North Olmsted, 44070</p>
               </div>
               <button class="booknowBtn">Book Now</button>
               </div>
             </div>
             <div class="serviceCard">
-              <img id="cardImg" src="./images/card1.png" alt="">
+              <div class="serviceImg"  ><img src="./images/card2.png" alt=""></div>
               <div class="cardInfo">
                 <div class="ratings">
                 <div><img src="./images/rateStar.png" alt="">
@@ -169,40 +172,43 @@
               </div>
               <h3 class="infoHeading">Salon Name</h3>
               <div class="serviceLocation">
-                <img src="./images/placeholder 1.png" alt="">
-                <p id="location">Brookpark Ext, 27085, North Olmsted, 44070</p>
+                <div><img src="./images/placeholder 1.png" alt=""></div>
+                <p id="location">2267 Main st, Fort Myers, 33901
+                </p>
               </div>
               <button class="booknowBtn">Book Now</button>
               </div>
             </div>
             <div class="serviceCard">
-              <img id="cardImg" src="./images/card1.png" alt="">
+              <div class="serviceImg" ><img src="./images/card3.png" alt=""></div>
               <div class="cardInfo">
                 <div class="ratings">
                 <div><img src="./images/rateStar.png" alt="">
                 <span>4.5</span></div>
                 <span id="review">104 reviews</span>
               </div>
-              <h3 class="infoHeading">Salon Name</h3>
+              <h3 class="infoHeading">Deluxe room</h3>
               <div class="serviceLocation">
-                <img src="./images/placeholder 1.png" alt="">
-                <p id="location">Brookpark Ext, 27085, North Olmsted, 44070</p>
+                <div><img src="./images/placeholder 1.png" alt=""></div>
+                <p id="location">2267 Main st, Fort Myers, 33901
+                </p>
               </div>
               <button class="booknowBtn">Book Now</button>
               </div>
             </div>
             <div class="serviceCard">
-              <img id="cardImg" src="./images/card1.png" alt="">
+              <div class="serviceImg" ><img src="./images/card4.png" alt=""></div>
               <div class="cardInfo">
                 <div class="ratings">
                 <div><img src="./images/rateStar.png" alt="">
                 <span>4.5</span></div>
                 <span id="review">104 reviews</span>
               </div>
-              <h3 class="infoHeading">Salon Name</h3>
+              <h3 class="infoHeading">Meeting room</h3>
               <div class="serviceLocation">
-                <img src="./images/placeholder 1.png" alt="">
-                <p id="location">Brookpark Ext, 27085, North Olmsted, 44070</p>
+                <div><img src="./images/placeholder 1.png" alt=""></div>
+                <p id="location">2267 Main st, Fort Myers, 33901
+                </p>
               </div>
               <button class="booknowBtn">Book Now</button>
               </div>
@@ -329,10 +335,19 @@
         dots: true,
         slidesToShow: 6,
         slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 794,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
         prevArrow: $(".prev"),
         nextArrow: $(".next")
 
       });
+
 
       $(".prev").on("click", function () {
         $slider.slick("slickPrev"); // Go to the previous slide

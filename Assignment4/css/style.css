@@ -18,9 +18,10 @@ ul{
 
 
 .container{
-    max-width: 1225px;
+    max-width: 1185px;
     margin: 0 auto;    
     padding: 20px;
+
 }
 
 .navbar{
@@ -72,16 +73,39 @@ ul{
 }
 
 .hero{
+    max-width: 100vw;
+    width: 100%;
     position: relative;
     height: calc(100vh - 118px);
 
+    background-image: url(/Assignment4/images/Rectangle\ 3.png);
+    /* height: 100%; */
+    background-size: auto 100%;
+    background-position: right;
+    /* object-fit: cover; */
+    background-repeat: no-repeat;
+    z-index: 1;
+
+
+    /* margin-left: 100px; */
+}
+.hero .container{
+    position: relative;
+    z-index: 3;
+    min-height: calc(100vh - 118px);
+    display: flex;
+    align-items: center;
 }
 
+
 .heroLeft{
+    z-index: 2;
     width: 70%;
-    height: 100%;
+    min-height: calc(100vh - 118px);
+
+
     position: absolute;
-    padding: 207px 80px;
+    /* padding: 207px 80px; */
     background: linear-gradient(89.61deg, #422A3C 55.75%, rgba(66, 42, 60, 0.85) 66.03%, rgba(66, 42, 60, 0.8) 75.96%, rgba(66, 42, 60, 0.31) 84.81%, rgba(66, 42, 60, 0) 99.7%);
 
 }
@@ -89,18 +113,9 @@ ul{
 
 
 .heroImg{
-    background-image: url(/Assignment4/images/Rectangle\ 3.png);
-    height: 100%;
-    background-size: auto 100%;
-    background-position: right;
-    /* object-fit: cover; */
-    background-repeat: no-repeat;
-
-
-    /* margin-left: 100px; */
 }
 
-.hero .heroLeft .logoTitle{
+.hero  .logoTitle{
     display: flex;
     gap: 10px;
     color: #FFFFFF;
@@ -108,7 +123,7 @@ ul{
 }
 
 
-.hero .heroLeft h1{
+.hero  h1{
     font-family: Playfair Display;
     font-size: 75px;
     font-weight: 700;
@@ -117,7 +132,7 @@ ul{
     margin-bottom: 24px;
 }
 
-.hero .heroLeft .discription{
+.hero  .discription{
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -125,14 +140,14 @@ ul{
     margin-bottom: 52px;
 }
 
-.hero .heroLeft .logoTitle .title{
+.hero  .logoTitle .title{
     font-weight: 600;
     font-size: 15px;
     line-height: 23px;
     color: #FFFFFF;
 }
 
-.hero .heroLeft .leftWrapper .form{
+.hero  .leftWrapper .form{
     display: flex;
     /* gap: 46px; */
     justify-content: space-between;
@@ -140,40 +155,40 @@ ul{
     border-radius: 61px;
     background-color: #F8F8F8;
 }
-.hero .heroLeft .leftWrapper .labels{
+.hero  .leftWrapper .labels{
     display: flex;
     gap: 24px;
 }
-.hero .heroLeft .leftWrapper .form .labelInput{
+.hero  .leftWrapper .form .labelInput{
     width: 307px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     border-bottom: 1px solid #141414;
 }
-.hero .heroLeft .leftWrapper .form .labelInput label{
+.hero  .leftWrapper .form .labelInput label{
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: #BA7894;
 
 }
-.hero .heroLeft .leftWrapper .form .labelInput input{
+.hero  .leftWrapper .form .labelInput input{
     border: none;
     background-color: #F8F8F8;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 }
-.hero .heroLeft .leftWrapper .form .labelInput ::placeholder{
+.hero  .leftWrapper .form .labelInput ::placeholder{
     color: #141414;
 }
-.hero .heroLeft .leftWrapper .form .labelInput .inputLogo{
+.hero  .leftWrapper .form .labelInput .inputLogo{
     display: flex;
     justify-content: space-between;
 }
 
-.hero .heroLeft .leftWrapper .form .searchBtn{
+.hero  .leftWrapper .form .searchBtn{
     display: flex;
     align-items: center;
     border: none;
@@ -184,7 +199,7 @@ ul{
     gap: 23px;
     background-color: #BA7894;
 }
-.hero .heroLeft .leftWrapper .form .searchBtn span{
+.hero  .leftWrapper .form .searchBtn span{
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
@@ -199,7 +214,7 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 20px;
+    /* gap: 20px; */
     padding: 50px 0;
 }
 
@@ -280,7 +295,7 @@ ul{
 .serviceWrapper .services .serviceCard{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    /* gap: 24px; */
     border-radius: 24px;
     border: 1px solid #0000003D
 
@@ -289,7 +304,7 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 24px;
+    padding: 16px;
 
 }
 .serviceWrapper .services .serviceCard .ratings{
@@ -297,9 +312,10 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
-.serviceCard #cardImg{
+ .serviceImg img{
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
+    width: 100%;
 
 }
 .ratings div{
@@ -328,6 +344,11 @@ ul{
     font-weight: 700;
     line-height: 21px;
     color: #BA7894;
+
+    &:hover{
+        background-color: #BA7894;
+        color: #FFFFFF;
+    }
 
 
 }
@@ -510,16 +531,13 @@ margin-bottom: 20px;
         background-color: #422A3C;
         width: 100%;
     }
-    .hero .heroLeft .leftWrapper .form{
+    .hero  .leftWrapper .form{
         display: flex;
         flex-direction: column;
         gap: 15px;
         align-items: center;
+        justify-content: center;
         padding: 10px 10px;
-    }
-    .hero .heroLeft .leftWrapper .form .searchBtn{
-        /* display: block; */
-        /* width: 211px; */
     }
     .form .labelInput{
         max-width: 250px;
@@ -534,5 +552,37 @@ margin-bottom: 20px;
         display: flex;
         flex-direction: column;
     }
+    .hero .logoTitle{
+        justify-content: center;
+    }
+    .hero h1{
+        text-align: center;
+    }
+    .hero .discription {
+        text-align: center;
+    }
+    .serviceWrapper .services{
+        width: 100%;
+        height: 100%;
+    }
+    .serviceWrapper .services .serviceCard{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .serviceImg,
+    .cardInfo{
+        width: 50%;
+    }
+    .serviceImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 24px;
+    }
+    .serviceImg{
+        object-fit: contain;
+    }
 
+    
 }
