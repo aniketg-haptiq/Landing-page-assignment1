@@ -550,7 +550,7 @@ color: #737373;
     gap: 10px;
   }
   
-  h5 {
+ .copyRightSection h5 {
     font-size: 14px;
     line-height: 24px;
     font-weight: 600;
@@ -586,6 +586,12 @@ color: #737373;
     width: 100%;
   }
 
+
+  .socials .displayIcons li{
+    display: none;
+  }
+
+ 
 
 
 
@@ -634,8 +640,10 @@ color: #737373;
       }
       .copyRightSection{
         padding: 25px 80px;
+        background-color: #252B42;
       }
       .copyRight{
+        padding: 0 40px;
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -675,6 +683,23 @@ color: #737373;
         border: 1px solid #23A6F0;
         color: #23A6F0;
       }
+     
+      .socials .icons{
+        display: none;
+      }
+
+      .copyRightSection .displayIcons li{
+        display: block;
+      }
+      .copyRightSection h5 {
+        color: white;
+      }
+      .companyInfo{
+        gap: 12px;
+      }
+
+
+     
     
 
   }
